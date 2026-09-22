@@ -294,6 +294,18 @@
   .card.coming-soon{border-style:dashed;}
   .card.coming-soon .icon-badge{opacity:0.9;}
 
+  .game-queue{margin-top:28px;}
+  .game-queue-label{
+    display:block;font-weight:800;font-size:0.85rem;color:var(--ink-soft);
+    margin-bottom:10px;
+  }
+  .game-queue-chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .game-chip{
+    font-size:0.82rem;font-weight:700;color:var(--purple-deep);
+    background:rgba(124,92,191,0.12);border:2px dashed var(--purple);
+    padding:6px 13px;border-radius:999px;
+  }
+
   .card.video-card{
     text-decoration:none;cursor:pointer;
     transition:transform .15s ease, box-shadow .15s ease;
@@ -696,24 +708,49 @@
         <div class="section-head">
           <span class="section-kicker">Side Quests</span>
           <h2>Games in the works</h2>
-          <p>A handful of small, playable tools that turn planner concepts into games &mdash; currently being built. No links yet, but the side-quest board is officially open.</p>
+          <p>A handful of small, playable tools that turn planner concepts into games &mdash; two are live right now, more join the arcade as they&rsquo;re built.</p>
+        </div>
+        <div class="hero-ctas" style="margin-bottom:26px;">
+          <a class="btn btn-primary" href="https://quest-pocket-spark.lovable.app" target="_blank" rel="noopener" style="background:var(--purple);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 4l14 8-14 8V4Z" fill="currentColor"/></svg>
+            Visit the ADHD Pocket Quest Arcade
+          </a>
         </div>
         <div class="grid grid-2">
-          <div class="card coming-soon">
-            <div class="icon-badge" style="background:rgba(124,92,191,0.14);">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="4" fill="var(--purple)"/><circle cx="9" cy="9" r="1.4" fill="white"/><circle cx="15" cy="15" r="1.4" fill="white"/><circle cx="15" cy="9" r="1.4" fill="white"/><circle cx="9" cy="15" r="1.4" fill="white"/></svg>
+          <a class="card video-card" href="https://quest-pocket-spark.lovable.app/game/overwhelm-dragon" target="_blank" rel="noopener">
+            <div class="icon-badge" style="background:rgba(124,92,191,0.14);font-size:1.35rem;">&#x1F409;</div>
+            <h3>The Overwhelm Dragon</h3>
+            <p>A cozy dragon&rsquo;s cave fills with floating thoughts &mdash; catch them and sort each where it belongs.</p>
+            <span class="video-tag" style="color:var(--purple-deep);">3&ndash;6 min &middot; Sorting</span>
+            <div class="card-foot">
+              <span class="status-pill status-live">Live</span>
+              <span class="link-arrow" style="color:var(--purple-deep);">Play now <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </div>
-            <h3>Tic-Tac-Doodles</h3>
-            <p>A cozy little doodle spin on tic-tac-toe, built for a quick reset between tasks.</p>
-            <div class="card-foot"><span class="status-pill status-progress">In development</span></div>
-          </div>
-          <div class="card coming-soon">
-            <div class="icon-badge" style="background:rgba(124,92,191,0.14);">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3 L21 8 V16 L12 21 L3 16 V8 Z" stroke="var(--purple)" stroke-width="2" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="card video-card" href="https://quest-pocket-spark.lovable.app/game/quest-launch" target="_blank" rel="noopener">
+            <div class="icon-badge" style="background:rgba(124,92,191,0.14);font-size:1.35rem;">&#x1F680;</div>
+            <h3>Quest Launch</h3>
+            <p>Pick the tiniest useful first move and fly a giant quest from pad to orbit.</p>
+            <span class="video-tag" style="color:var(--purple-deep);">2&ndash;4 min &middot; Starting</span>
+            <div class="card-foot">
+              <span class="status-pill status-live">Live</span>
+              <span class="link-arrow" style="color:var(--purple-deep);">Play now <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </div>
-            <h3>Bonus Quest Board</h3>
-            <p>A playable side-quest tracker for the small wins that don&rsquo;t fit anywhere else.</p>
-            <div class="card-foot"><span class="status-pill status-progress">In development</span></div>
+          </a>
+        </div>
+        <div class="game-queue">
+          <span class="game-queue-label">More lining up for the arcade:</span>
+          <div class="game-queue-chips">
+            <span class="game-chip">Tiny Task Tavern</span>
+            <span class="game-chip">Dopamine Delivery</span>
+            <span class="game-chip">Frog Brain Crossing</span>
+            <span class="game-chip">Five-Minute Time Wizard</span>
+            <span class="game-chip">Missing Thing Mystery</span>
+            <span class="game-chip">Sensory Shield</span>
+            <span class="game-chip">Conversation Potion Shop</span>
+            <span class="game-chip">Eight-Armed Octopus</span>
+            <span class="game-chip">Habit Garden</span>
+            <span class="game-chip">Chaos Quest</span>
           </div>
         </div>
       </div>
